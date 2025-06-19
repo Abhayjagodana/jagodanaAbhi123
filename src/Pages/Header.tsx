@@ -23,7 +23,7 @@ function Header(){
           
                           <div className="z-[10] flex items-center justify-center lg:hidden">
                               <img
-                                  src="/icon/menu.svg"
+                                  src="https://www.jagodana.com/icon/menu.svg"
                                   alt="menu icon"
                                   title="menu-icon"
                                   height="20"
