@@ -4,6 +4,7 @@ import { Marquee } from "@/components/magicui/marquee";
 const reviews = [
   {
     name: "PrimeTech Incverification icon for PrimeTech Inc.primetech",
+    username: "@jill",
     body: "Jagodana LLC implemented advanced automation for our marketing and CRM systems, cutting down our workload dramatically. Their technical acumen and dedication were impressive throughout the process..",
     img: "https://www.jagodana.com/testimonials/innovatex.jpeg",
   },
@@ -28,7 +29,7 @@ const reviews = [
   
 ];
 
-const firstRow = reviews.slice(0, reviews.length / 2);
+const firstRow = reviews.slice(0, reviews.length / 1);
 const secondRow = reviews.slice(reviews.length / 2);
 
 const ReviewCard = ({

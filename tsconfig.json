@@ -1,11 +1,15 @@
 {
   "compilerOptions": {
-    "jsx": "react-jsx",         // ✅ Use "react-jsx" for React 17+
-    "module": "esnext",
-    "target": "es6",
-    "moduleResolution": "node",
+    "jsx": "react-jsx",         // ✅ Required for JSX in React 17+
+    "target": "ESNext",         // Or at least "ES6"
+    "module": "ESNext",
+    "moduleResolution": "Bundler", // For Vite
     "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "strict": true,
-    "skipLibCheck": true
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
   }
 }
