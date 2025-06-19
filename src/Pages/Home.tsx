@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { Link, NavLink } from "react-router";
 import { ClientDemo } from "./ClientDemo";
 import { MarqueeDemo } from "./SlideBar";
 import Footer from "./Footer";
@@ -186,7 +186,7 @@ function Home() {
                                         transform: "translateX(70%) translateY(60%) scale(3)"
                                     }}
                                 >
-                                    <a href="https://static.licdn.com/aero-v1/sc/h/c5ybm82ti04zuasz2a0ubx7bu">
+                                    <NavLink to="https://www.linkedin.com/in/jagodana-abhi-8237a8269/">
                                         <img
                                             src="https://media.licdn.com/dms/image/v2/D4D03AQHi-ZYDdrqUMA/profile-displayphoto-scale_400_400/B4DZd8Wm_AHkAg-/0/1750137991739?e=1755734400&v=beta&t=ngHX8kKXsDObNpDMWTYz5ITV14Pi8a9wzdaVuI87T9Y"
                                             alt="Abhi Jagodana"
@@ -195,7 +195,7 @@ function Home() {
                                             height="auto"
                                             width="auto"
                                         />
-                                    </a>
+                                    </NavLink>
                                 </div>
 
                             </div>

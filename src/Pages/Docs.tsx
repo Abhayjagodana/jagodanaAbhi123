@@ -1,3 +1,4 @@
+import { NavLink } from "react-router";
 import Footer from "./Footer";
 
 function Docs(){
@@ -20,9 +21,9 @@ function Docs(){
     </h1>
   </div>
   <div className="flex flex-wrap items-center justify-center gap-5">
-    <a
+    <NavLink
       className="relative flex flex-col justify-between gap-2 rounded-10 bg-contain p-1"
-      href="/Privacy"
+      to="/Privacy"
       
     >
       <div className="flex flex-col gap-4 rounded-5 bg-white p-4 border-2 border-slate-300 hover:border-indigo-300">
@@ -40,11 +41,11 @@ function Docs(){
           October 10, 2024
         </time>
       </div>
-    </a>
+    </NavLink>
 
-    <a
+    <NavLink
       className="relative flex flex-col justify-between gap-2 rounded-10 bg-contain p-1"
-      href="/terms"
+      to="/terms"
       
     >
       <div className="flex flex-col gap-4 rounded-5 bg-white p-4 border-2">
@@ -62,7 +63,7 @@ function Docs(){
           October 10, 2024
         </time>
       </div>
-    </a>
+    </NavLink>
   </div>
 </div>
   <Footer></Footer>
