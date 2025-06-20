@@ -1,10 +1,11 @@
 import { useForm } from "react-hook-form";
-  import { ToastContainer, toast } from 'react-toastify';
+  
 import Footer from "./Footer";
+import { NavLink } from "react-router";
 
 function Contact() {
   const { register, handleSubmit, watch, formState: { errors } } = useForm();
-  const notify = () => toast("Succesfuly Send Message");
+   
   return (
     <div className="container mx-auto mb-12 mt-[30px] flex max-w-[1200px] flex-col px-4">
       <div data-aos="fade-up" className="flex flex-col items-center justify-center aos-init aos-animate">
@@ -36,7 +37,7 @@ function Contact() {
               Reach out by filling the form.
             </h2>
 
-            <form onSubmit={handleSubmit((data) => console.log(data))} onClick={notify} ><ToastContainer />
+            <form onSubmit={handleSubmit((data) => console.log(data))}  >
               <div className="grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-6">
                 {/* First Name */}
                 <div>
@@ -141,7 +142,7 @@ function Contact() {
               {/* Submit Button */}
               <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 shadow h-9 px-4 w-full rounded-10 bg-black bg-gradient-to-l from-black via-white/20 to-black py-6 text-[16px] text-white hover:bg-black"
               > 
-                <p className="px-[30px] py-[5px]">Submit</p>
+                <p className="px-[30px] py-[5px] "  >Submit</p>
               </button>
             </form>
             {/* Contact Info */}
@@ -172,11 +173,11 @@ function Contact() {
           </div>
 
           {/* Location Image */}
-          <a
+          <NavLink
             className="flex"
             target="_blank"
             rel="noopener noreferrer"
-            href="https://maps.app.goo.gl/hy173t4yqpnAYorJ6"
+            to="https://www.bing.com/maps?q=platinum+park+surat&cvid=a3b35ecb47e0417dabe958396e080321&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOdIBCTEwNzgyajBqNKgCBLACAQ&FORM=ANAB01&PC=U531"
           >
             <img
               src="https://www.jagodana.com/company-location/map.png "
@@ -184,7 +185,7 @@ function Contact() {
               alt="company location"
               title="company location"
             />
-          </a>
+          </NavLink>
         </div>
       </div>
       <Footer></Footer>

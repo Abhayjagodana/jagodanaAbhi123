@@ -1,3 +1,4 @@
+import { NavLink } from "react-router";
 import Footer from "./Footer";
 
 function Blogs(){
@@ -32,9 +33,9 @@ function Blogs(){
             blog post you're looking for doesn't exist. Please explore other posts or check back later for new content.
           </p>
         </div>
-        <a
+        <NavLink
           className="max-h-6 rounded-10 bg-black bg-gradient-to-l from-black via-white/20 to-black text-sm font-semibold text-white shadow-lg px-6 py-6 flex justify-center items-center gap-2"
-          href="/"
+          to="/"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +53,7 @@ function Blogs(){
             <path d="M2 12H22"></path>
           </svg>
           Back To Home
-        </a>
+        </NavLink>
       </div>
     </div>
     <div></div>

@@ -1,3 +1,4 @@
+import { NavLink } from "react-router";
 import Footer from "./Footer";
 
 function ProductSubSaas(){
@@ -55,8 +56,8 @@ function ProductSubSaas(){
       </div>
     </div>
     <div>
-      <a className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary hover:bg-primary/90 h-9 rounded-10 bg-gradient-to-l from-black via-white/20 to-black px-6 py-3 font-semibold text-white shadow-lg mb-10 !py-5"
-      href="/Product"
+      <NavLink className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary hover:bg-primary/90 h-9 rounded-10 bg-gradient-to-l from-black via-white/20 to-black px-6 py-3 font-semibold text-white shadow-lg mb-10 !py-5"
+      to="/Product"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -74,7 +75,7 @@ function ProductSubSaas(){
           <path d="M19 12H5"></path>
         </svg>
         Back To Products
-      </a>
+      </NavLink>
     </div>
   </div>
 </div>

@@ -69,7 +69,7 @@ function Footer(){
     </div>
     <div className="flex flex-col justify-center gap-3 pt-5 max-md:items-center md:flex-row md:justify-between">
       <div className="order-2 flex flex-col text-[15px] md:order-1">
-        <span>© 2025 Jagodana LLC. All rights reserved.</span>
+        <span>© 2025 Jagodana Abhi LLC. All rights reserved.</span>
         <span className="text-gray-400">1021 E Lincolnway, 7463 Cheyenne, WY 82001</span>
         <span className="text-gray-400">support@jagodana.org</span>
       </div>
