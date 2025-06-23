@@ -22,7 +22,7 @@ const router=createBrowserRouter([
     </div>
   },
   {
-    path:"/Product",
+    path:"/product",
     element:
     <div>
       <Header></Header>
@@ -39,7 +39,7 @@ const router=createBrowserRouter([
     </div>
   },
 {
-    path:"/About",
+    path:"/about",
     element:
     <div>
       <Header></Header>
@@ -48,7 +48,7 @@ const router=createBrowserRouter([
   },
 
   {
-    path:"/Blogs",
+    path:"/blogs",
     element:
     <div>
       <Header></Header>
@@ -57,7 +57,7 @@ const router=createBrowserRouter([
   },
 
   {
-    path:"/Docs",
+    path:"/docs",
     element:
     <div>
       <Header></Header>
@@ -66,7 +66,7 @@ const router=createBrowserRouter([
   },
 
   {
-    path:"/Privacy",
+    path:"/privacy",
     element:
     <div>
       <Header></Header>
@@ -75,7 +75,7 @@ const router=createBrowserRouter([
   },
 
   {
-    path:"/Terms",
+    path:"/terms",
     element:
     <div>
       <Header></Header>
@@ -92,7 +92,7 @@ const router=createBrowserRouter([
     </div>
   },
   {
-    path:"/Subsaas",
+    path:"/subsaas",
     element:
     <div>
       <Header></Header>
