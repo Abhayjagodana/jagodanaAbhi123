@@ -1,0 +1,11 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host:https://jagodana-abhi123.vercel.app/
+# Sitemaps
+Sitemap: https://www.jagodana.com/sitemap.xml
+Sitemap: https://jagodana-abhi123.vercel.app/blogs/sitemap.xml
+Sitemap: https://jagodana-abhi123.vercel.app/docs/sitemap.xml
+Sitemap: https://jagodana-abhi123.vercel.app/product/sitemap.xml
