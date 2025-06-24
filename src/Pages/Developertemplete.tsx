@@ -1,9 +1,14 @@
 import { NavLink } from "react-router";
 import Footer from "./Footer";
-
+import { Helmet } from "react-helmet";
 function Developertemplates(){
     return(
         <div>
+              <Helmet>
+                <meta charSet="utf-8" />
+                <title>saasDeveloper-jagodanaabhi-123</title>
+                
+            </Helmet>
              <div className="mx-auto max-w-[900px] px-4 md:px-0">
   <div className="flex flex-col items-center justify-center">
     <div className="flex flex-col pt-[20px]">

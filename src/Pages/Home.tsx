@@ -3,16 +3,12 @@ import { Link, NavLink } from "react-router";
 import { ClientDemo } from "./ClientDemo";
 import { MarqueeDemo } from "./SlideBar";
 import Footer from "./Footer";
-import { Helmet } from "react-helmet";
+
 function Home() {
     return (
 
         <div className="container mx-auto mt-10 max-w-[1200px] flex-1 px-4">
-            <Helmet>
-                <meta charSet="utf-8" />
-                <title>Home-jagodanaabhi-123</title>
-                
-            </Helmet>
+            
             <div className="mb-[30px] md:mb-[64px]">
                 <div
                     className="flex items-center justify-center overflow-hidden rounded-[32px] bg-cover p-8 md:p-24 lg:rounded-[50px]"
