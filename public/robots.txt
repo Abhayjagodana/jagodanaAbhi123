@@ -2,9 +2,9 @@
 User-agent: *
 Allow: /
 # Host
-Host:https://jagodana-abhi123.vercel.app/
+Host:https://jagodana-abhi123.vercel.app
 # Sitemaps
-Sitemap: ttps://jagodana-abhi123.vercel.app/sitemap.xml
+Sitemap: https://jagodana-abhi123.vercel.app/sitemap.xml
 Sitemap: https://jagodana-abhi123.vercel.app/blogs/sitemap.xml
 Sitemap: https://jagodana-abhi123.vercel.app/docs/sitemap.xml
 Sitemap: https://jagodana-abhi123.vercel.app/product/sitemap.xml

@@ -6,7 +6,10 @@ function About(){
           <Helmet>
                 <meta charSet="utf-8" />
                 <title>About-jagodanaabhi-123</title>
-                
+                 <meta
+          name="description"
+          content="Learn more about Jagodana Abhi LLC, our mission, and the services we provide to accelerate your development workflow."
+        />
             </Helmet>
             <div className="container mx-auto mb-5 mt-[30px] flex flex-col gap-10 px-4 md:mb-12 md:mt-[50px]">
   <div data-aos="fade-up" className="flex flex-col items-center justify-center aos-init aos-animate">
