@@ -4,7 +4,7 @@ Allow: /
 # Host
 Host:https://jagodana-abhi123.vercel.app/
 # Sitemaps
-Sitemap: https://www.jagodana.com/sitemap.xml
+Sitemap: ttps://jagodana-abhi123.vercel.app/sitemap.xml
 Sitemap: https://jagodana-abhi123.vercel.app/blogs/sitemap.xml
 Sitemap: https://jagodana-abhi123.vercel.app/docs/sitemap.xml
 Sitemap: https://jagodana-abhi123.vercel.app/product/sitemap.xml
