@@ -5,7 +5,7 @@ function Footer(){
     <div>
       <Helmet>
                 <meta charSet="utf-8" />
-                <title>Footer-jagodanaabhi-123</title>
+                <title></title>
                 
             </Helmet>
     <div className="border-t border-black">
