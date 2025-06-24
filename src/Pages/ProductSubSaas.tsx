@@ -31,24 +31,24 @@ function ProductSubSaas(){
         <div className="container flex max-w-[1200px] flex-col justify-center gap-10 px-4 md:px-0">
           <img src="https://www.jagodana.com/imejis-image.png" alt="product details" title="product details" height="auto" width="auto" />
           <div>
-            <h2 className="text-3xl font-semibold mt-6 mb-2">Transform Your Image Management with imejis</h2>
-            <p className="text-base leading-7 mb-4 text-gray-700">
+            <h2 className="text-3xl font-semibold mt-6 mb-2 flex justify-start">Transform Your Image Management with imejis</h2>
+            <p className="text-base leading-7 mb-4 text-gray-700 flex justify-start">
               Empowering your visual content workflow with automated image categorization and AI-driven tools.
             </p>
-            <h3 className="text-2xl font-semibold mt-6 mb-2">Efficient Image Categorization</h3>
-            <p className="text-base leading-7 mb-4 text-gray-700">
+            <h3 className="text-2xl font-semibold mt-6 mb-2 flex justify-start">Efficient Image Categorization</h3>
+            <p className="text-base leading-7 mb-4 text-gray-700 flex justify-start ">
               Organize and categorize your images effortlessly. imejis uses advanced AI to sort and tag images, making your library easy to navigate and search.
             </p>
-            <h3 className="text-2xl font-semibold mt-6 mb-2">Smart Search and Filters</h3>
-            <p className="text-base leading-7 mb-4 text-gray-700">
+            <h3 className="text-2xl font-semibold mt-6 mb-2 flex justify-start">Smart Search and Filters</h3>
+            <p className="text-base leading-7 mb-4 text-gray-700 flex justify-start">
               Find any image in seconds using smart search and filters. Whether you're looking by tags, date, or content, imejis makes searching intuitive and fast.
             </p>
-            <h3 className="text-2xl font-semibold mt-6 mb-2">Seamless Integration</h3>
-            <p className="text-base leading-7 mb-4 text-gray-700">
+            <h3 className="text-2xl font-semibold mt-6 mb-2 flex justify-start">Seamless Integration</h3>
+            <p className="text-base leading-7 mb-4 text-gray-700 flex justify-start">
               Integrate imejis with your existing systems. Whether it's cloud storage or content management platforms, imejis ensures a smooth and flexible workflow.
             </p>
-            <h3 className="text-2xl font-semibold mt-6 mb-2">AI-Driven Enhancement Tools</h3>
-            <p className="text-base leading-7 mb-4 text-gray-700">
+            <h3 className="text-2xl font-semibold mt-6 mb-2 flex justify-start">AI-Driven Enhancement Tools</h3>
+            <p className="text-base leading-7 mb-4 text-gray-700 flex justify-start">
               Enhance your images with powerful AI tools. Automatically adjust quality, resolution, and optimize images for various uses.
             </p>
           </div>
