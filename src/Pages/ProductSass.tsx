@@ -1,9 +1,14 @@
 import { NavLink } from "react-router";
 import Footer from "./Footer";
-
+import { Helmet } from "react-helmet";
 function ProductSass() {
   return (
     <div>
+      <Helmet>
+                <meta charSet="utf-8" />
+                <title>Productsaas-jagodanaabhi-123</title>
+                
+            </Helmet>
       <div className="flex flex-col items-center justify-center gap-10">
         <div className="flex flex-col pt-[20px]">
           <div className="mb-[60px] md:mb-[100px]">

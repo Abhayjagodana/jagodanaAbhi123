@@ -1,8 +1,13 @@
 import Footer from "./Footer";
-
+import { Helmet } from "react-helmet";
 function Privacyploice(){
     return(
         <div>
+          <Helmet>
+                <meta charSet="utf-8" />
+                <title>privacy-jagodanaabhi-123</title>
+                
+            </Helmet>
           <div>
   <div className="container mx-auto flex max-w-[900px] flex-col gap-5 px-4 md:px-0">
     <div

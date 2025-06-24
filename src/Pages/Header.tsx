@@ -1,6 +1,6 @@
 import { Link, NavLink } from "react-router";
 import { useState, useEffect } from "react";
-
+import { Helmet } from "react-helmet";
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -17,6 +17,11 @@ function Header() {
 
   return (
     <div className="sticky top-5 z-50 w-full">
+      <Helmet>
+                <meta charSet="utf-8" />
+                <title>Header-jagodanaabhi-123</title>
+                
+            </Helmet>
       <div
         className={`mx-auto flex max-w-[1200px] items-center justify-between rounded-xl px-4 py-4 md:px-8 transition-all duration-300 ${
           scrolled ? "border border-black bg-white shadow-lg max-w-[700px] " : ""

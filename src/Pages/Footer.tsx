@@ -1,7 +1,13 @@
 import { Link } from "react-router";
+import { Helmet } from "react-helmet";
 function Footer(){
     return(
     <div>
+      <Helmet>
+                <meta charSet="utf-8" />
+                <title>Footer-jagodanaabhi-123</title>
+                
+            </Helmet>
     <div className="border-t border-black">
   <div className="container mx-auto flex max-w-[1200px] flex-col p-4 md:py-10">
     <div className="flex flex-col justify-center gap-3 border-b pb-5 max-md:items-center md:flex-row md:justify-between">

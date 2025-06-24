@@ -1,8 +1,13 @@
 import Footer from "./Footer"
-
+import { Helmet } from "react-helmet";
 function About(){
     return(
         <div>
+          <Helmet>
+                <meta charSet="utf-8" />
+                <title>About-jagodanaabhi-123</title>
+                
+            </Helmet>
             <div className="container mx-auto mb-5 mt-[30px] flex flex-col gap-10 px-4 md:mb-12 md:mt-[50px]">
   <div data-aos="fade-up" className="flex flex-col items-center justify-center aos-init aos-animate">
     <h1 className="mx-auto mb-6 max-w-4xl text-center text-2xl font-bold capitalize leading-tight text-black md:text-[54px]">

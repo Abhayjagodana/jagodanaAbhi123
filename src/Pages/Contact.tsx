@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-  
+  import { Helmet } from "react-helmet";
 import Footer from "./Footer";
 import { NavLink } from "react-router";
 
@@ -8,6 +8,11 @@ function Contact() {
    
   return (
     <div className="container mx-auto mb-12 mt-[30px] flex max-w-[1200px] flex-col px-4">
+      <Helmet>
+                <meta charSet="utf-8" />
+                <title>contact-jagodanaabhi-123</title>
+                
+            </Helmet>
       <div data-aos="fade-up" className="flex flex-col items-center justify-center aos-init aos-animate">
         <h1 className="mx-auto mb-6 max-w-4xl text-center text-2xl font-bold capitalize leading-tight text-black md:text-[54px]">
           Get in Touch with Us!

@@ -1,9 +1,14 @@
 import { NavLink } from "react-router";
 import Footer from "./Footer";
-
+import { Helmet } from "react-helmet";
 function Blogs(){
   return(
     <div>
+      <Helmet>
+                <meta charSet="utf-8" />
+                <title>Blogs-jagodanaabhi-123</title>
+                
+            </Helmet>
         <div className="container mx-auto mb-5 flex min-h-screen w-full max-w-[1200px] flex-col gap-3 px-5 md:mb-14 lg:gap-[30px]">
   <div
     className="mt-[30px] flex w-full flex-col items-center justify-center gap-2 rounded bg-cover p-5 md:gap-5 md:p-10 bg-gradient-to-r from-emerald-100 from-emerald-50 via-yellow-50  to-fuchsia-200
