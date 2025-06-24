@@ -12,6 +12,9 @@ import Privacyploice from './Pages/PrivacyPolice'
 import TermsService from './Pages/TermsService'
 import ProductSass from './Pages/ProductSass'
 import ProductSubSaas from './Pages/ProductSubSaas'
+import SaasDeveloperTemplete from './Pages/SaasDevloperTemplete'
+import Developertemplates from './Pages/Developertemplete'
+
 const router=createBrowserRouter([
   {
     path:"/",
@@ -97,6 +100,22 @@ const router=createBrowserRouter([
     <div>
       <Header></Header>
       <ProductSubSaas></ProductSubSaas>
+    </div>
+  },
+  {
+    path:"/saasdevelopertemplete",
+    element:
+    <div>
+      <Header></Header>
+      <SaasDeveloperTemplete></SaasDeveloperTemplete>
+    </div>
+  },
+  {
+    path:"/developertemplete",
+    element:
+    <div>
+      <Header></Header>
+      <Developertemplates></Developertemplates>
     </div>
   },
 ])
