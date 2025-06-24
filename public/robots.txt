@@ -1,6 +1,7 @@
 # *
 User-agent: *
 Allow: /
+Disallow:/product
 
 # Sitemaps
 Sitemap: https://jagodana-abhi123.vercel.app/sitemap.xml
