@@ -1,4 +1,5 @@
 import { NavLink } from "react-router";
+import Footer from "./Footer";
 
 function Developertemplates(){
     return(
@@ -119,7 +120,7 @@ function Developertemplates(){
     </div>
   </div>
 </div>
-
+<Footer></Footer>
         </div>
     )
 }
