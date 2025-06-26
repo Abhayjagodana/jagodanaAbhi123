@@ -1,6 +1,5 @@
 # *
 User-agent: *
-Allow:/
 Disallow:/product/
 # Host
 Host: https://jagodana-abhi123.vercel.app
