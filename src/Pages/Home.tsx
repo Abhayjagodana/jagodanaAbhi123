@@ -6,7 +6,7 @@ import Footer from "./Footer";
 
 function Home() {
     return (
-
+           
         <div className="container mx-auto mt-10 max-w-[1200px] flex-1 px-4">
             
             <div className="mb-[30px] md:mb-[64px]">
