@@ -9,7 +9,7 @@ function Products() {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Product-jagodanaabhi-123</title>
-        <meta name="description" content="Welcome to Jagodana Abhi LLC - Discover our top-notch products and services." />
+        {/* <meta name="description" content="Welcome to Jagodana Abhi LLC - Discover our top-notch products and services." /> */}
 
       </Helmet>
 
