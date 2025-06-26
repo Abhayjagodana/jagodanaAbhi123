@@ -1,7 +1,7 @@
 # *
-User-agent:Bingbot
+User-agent:*
 Allow:/
-Crawl-delay: 10
+
 
 # Host
 Host: https://jagodana-abhi123.vercel.app
