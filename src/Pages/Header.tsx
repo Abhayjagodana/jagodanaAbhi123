@@ -36,7 +36,7 @@ function Header() {
         </a>
 
         {/* Desktop Navigation */}
-        <div className="hidden gap-5 lg:flex">
+        <div className="hidden gap-5 lg:flex ">
           <NavLink to="/Product" className="font-semibold">
             Products
           </NavLink>
