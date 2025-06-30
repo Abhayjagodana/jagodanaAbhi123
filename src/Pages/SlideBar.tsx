@@ -41,11 +41,14 @@ const ReviewCard = ({
   name,
   username,
   body,
+  imgTitle
+  
 }: {
   img: string;
   name: string;
   username: string;
   body: string;
+  imgTitle: string
 }) => {
   return (
     <figure
