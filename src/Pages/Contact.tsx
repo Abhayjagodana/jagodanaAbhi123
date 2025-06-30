@@ -2,6 +2,26 @@ import { useForm } from "react-hook-form";
   import { Helmet } from "react-helmet";
 import Footer from "./Footer";
 import { NavLink } from "react-router";
+const onSubmit = async (data: any) => {
+  try {
+    const response = await fetch('http://localhost:5000/api/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    });
+
+    if (response.ok) {
+      alert('Submitted successfully!');
+    } else {
+      alert('Submission failed.');
+    }
+  } catch (error) {
+    console.error('Error:', error);
+    alert('Something went wrong.');
+  }
+};
 
 function Contact() {
   const { register, handleSubmit, watch, formState: { errors } } = useForm();

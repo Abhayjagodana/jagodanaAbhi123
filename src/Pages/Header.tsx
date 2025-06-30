@@ -17,11 +17,10 @@ function Header() {
 
   return (
     <div className="sticky top-5 z-50 w-full">
-      
+
       <div
-        className={`mx-auto flex max-w-[1200px] items-center justify-between rounded-xl px-4 py-4 md:px-8 transition-all duration-300 ${
-          scrolled ? "border border-black bg-white shadow-lg max-w-[700px] " : ""
-        }`}
+        className={`mx-auto flex max-w-[1200px] items-center justify-between rounded-xl px-4 py-4 md:px-8 transition-all duration-300 ${scrolled ? "border border-black bg-white shadow-lg max-w-[700px] " : ""
+          }`}
       >
         {/* Logo */}
         <a href="/" className="flex items-center gap-2">
@@ -54,8 +53,11 @@ function Header() {
             <img
               src="https://www.jagodana.com/icon/menu.svg"
               alt="menu"
+              width="24"
+              height="24"
               className="h-6 w-6"
             />
+
           </button>
         </div>
       </div>
