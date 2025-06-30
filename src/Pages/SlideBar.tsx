@@ -7,24 +7,28 @@ const reviews = [
     username: "@jill",
     body: "Jagodana LLC implemented advanced automation for our marketing and CRM systems, cutting down our workload dramatically. Their technical acumen and dedication were impressive throughout the process..",
     img: "https://www.jagodana.com/testimonials/innovatex.jpeg",
+     imgTitle: "PrimeTech"
   },
   {
     name: "TechFlow Solutionsverification icon for TechFlow Solutions techflow",
     username: "@jill",
     body: "The team at Jagodana LLC automated several critical business processes for us using custom scripts and Zapier integrations.",
     img: "https://www.jagodana.com/testimonials/vanguard.jpeg",
+    imgTitle: "TechFlow"
   },
   {
     name: "InnovateXverification icon for InnovateX innovatex",
     username: "@john",
     body: "We collaborated with Jagodana LLC for both automation and software development. Their ability to streamline our operations through tailored automation solutions has significantly increased our productivity.",
     img: "https://www.jagodana.com/testimonials/growthedge.jpeg",
+    imgTitle: "InnovateXverification"
   },
   {
     name: "PrimeTech Inc.verification icon for PrimeTech Inc. primetech",
     username: "@jane",
     body: "Jagodana LLC implemented advanced automation for our marketing and CRM systems, cutting down our workload dramatically. .",
     img: "https://www.jagodana.com/testimonials/primetech.jpeg",
+    imgTitle: "PrimeTech Inc."
   },
   
 ];

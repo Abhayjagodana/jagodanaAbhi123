@@ -5,30 +5,37 @@ const reviews = [
   {
    
     img: "https://www.jagodana.com/icon/flutter.svg",
+    imgTitle: "flutter."
   },
   {
     
     img: "https://www.jagodana.com/icon/aws.svg",
+    imgTitle: "aws."
   },
   {
     
     img:" https://www.jagodana.com/icon/monday-com-logo.svg",
+    imgTitle: "monday-com"
   },
   {
     
     img: "https://www.jagodana.com/icon/mongodb.svg",
+    imgTitle: "mongodb."
   },
    {
    
     img: "https://www.jagodana.com/icon/nextjs-icon.svg",
+    imgTitle: "next.js."
   },
   {
     
     img: "https://www.jagodana.com/icon/nodejs.png",
+    imgTitle: "node js."
   },
   {
     
     img: "https://www.jagodana.com/icon/make-logo.svg",
+    imgTitle: "make logo."
   },
   {
     
@@ -37,10 +44,12 @@ const reviews = [
    {
     
     img: "https://www.jagodana.com/icon/files.png",
+    imgTitle: "file pag."
   },
    {
     
     img: "https://www.jagodana.com/icon/zapier-logo.svg",
+    imgTitle: "zapier-logo."
   },
   
 

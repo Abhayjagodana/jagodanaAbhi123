@@ -27,9 +27,11 @@ function Header() {
           <img
             src="https://www.jagodana.com/logo.jpg"
             alt="company logo"
+            title="company logo"
             width="36"
             height="36"
             className="object-contain max-h-[36px]"
+
           />
           <p className="text-xl font-bold capitalize">Jagodana Abhi LLC</p>
         </a>
@@ -53,9 +55,11 @@ function Header() {
             <img
               src="https://www.jagodana.com/icon/menu.svg"
               alt="menu"
+              title="menu"
               width="24"
               height="24"
               className="h-6 w-6"
+
             />
 
           </button>
