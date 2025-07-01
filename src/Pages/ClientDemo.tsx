@@ -4,43 +4,43 @@ import { Marquee } from "@/components/magicui/marquee";
 const reviews = [
   {
     img: "https://www.jagodana.com/icon/flutter.svg",
-    title: "Flutter",
+    title: "Flutter App Development",
   },
   {
     img: "https://www.jagodana.com/icon/aws.svg",
-    title: "AWS",
+    title: "Amazon Web Services (AWS)",
   },
   {
     img: "https://www.jagodana.com/icon/monday-com-logo.svg",
-    title: "Monday.com",
+    title: "Monday.com Integration",
   },
   {
     img: "https://www.jagodana.com/icon/mongodb.svg",
-    title: "MongoDB",
+    title: "MongoDB Database",
   },
   {
     img: "https://www.jagodana.com/icon/nextjs-icon.svg",
-    title: "Next.js",
+    title: "Next.js Framework",
   },
   {
     img: "https://www.jagodana.com/icon/nodejs.png",
-    title: "Node.js",
+    title: "Node.js Runtime",
   },
   {
     img: "https://www.jagodana.com/icon/make-logo.svg",
-    title: "Make",
+    title: "Make (Integromat) Automation",
   },
   {
     img: "https://www.jagodana.com/icon/framer.png",
-    title: "Framer",
+    title: "Framer Design Tool",
   },
   {
     img: "https://www.jagodana.com/icon/files.png",
-    title: "Files",
+    title: "File Management",
   },
   {
     img: "https://www.jagodana.com/icon/zapier-logo.svg",
-    title: "Zapier",
+    title: "Zapier Automation",
   },
 ];
 
@@ -56,11 +56,15 @@ const ReviewCard = ({
   title: string;
 }) => {
   return (
-    <figure
-      className={cn("h-full w-32 cursor-pointer text-center space-y-2")}
-    >
+    <figure className="h-full w-32 cursor-pointer text-center space-y-2">
       <div className="flex items-center justify-center">
-        <img width={62} height={62} alt={title} src={img} title={title}/>
+        <img
+          width={62}
+          height={62}
+          alt={title}
+          title={title}
+          src={img}
+        />
       </div>
       <figcaption className="text-xs text-muted-foreground">{title}</figcaption>
     </figure>
