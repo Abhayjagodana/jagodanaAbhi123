@@ -3,86 +3,70 @@ import { Marquee } from "@/components/magicui/marquee";
 
 const reviews = [
   {
-   
     img: "https://www.jagodana.com/icon/flutter.svg",
-    imgTitle: "flutter."
+    title: "Flutter",
   },
   {
-    
     img: "https://www.jagodana.com/icon/aws.svg",
-    imgTitle: "aws."
+    title: "AWS",
   },
   {
-    
-    img:" https://www.jagodana.com/icon/monday-com-logo.svg",
-    imgTitle: "monday-com"
+    img: "https://www.jagodana.com/icon/monday-com-logo.svg",
+    title: "Monday.com",
   },
   {
-    
     img: "https://www.jagodana.com/icon/mongodb.svg",
-    imgTitle: "mongodb."
+    title: "MongoDB",
   },
-   {
-   
+  {
     img: "https://www.jagodana.com/icon/nextjs-icon.svg",
-    imgTitle: "next.js."
+    title: "Next.js",
   },
   {
-    
     img: "https://www.jagodana.com/icon/nodejs.png",
-    imgTitle: "node js."
+    title: "Node.js",
   },
   {
-    
     img: "https://www.jagodana.com/icon/make-logo.svg",
-    imgTitle: "make logo."
+    title: "Make",
   },
   {
-    
     img: "https://www.jagodana.com/icon/framer.png",
+    title: "Framer",
   },
-   {
-    
+  {
     img: "https://www.jagodana.com/icon/files.png",
-    imgTitle: "file pag."
+    title: "Files",
   },
-   {
-    
+  {
     img: "https://www.jagodana.com/icon/zapier-logo.svg",
-    imgTitle: "zapier-logo."
+    title: "Zapier",
   },
-  
-
 ];
+
 
 const firstRow = reviews.slice(0, reviews.length / 2);
 const secondRow = reviews.slice(reviews.length / 2);
 
 const ReviewCard = ({
   img,
- 
+  title,
 }: {
   img: string;
- 
+  title: string;
 }) => {
   return (
     <figure
-      className={cn(
-        " h-full w-32 cursor-pointer ",
-        // light styles
-        // "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
-        // dark styles
-        // "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]",
-      )}
+      className={cn("h-full w-32 cursor-pointer text-center space-y-2")}
     >
-      <div className="flex flex-row  ">
-        <img className="" width="62 " height="62" alt="" src={img} />
-        
+      <div className="flex items-center justify-center">
+        <img width={62} height={62} alt={title} src={img} />
       </div>
-      
+      <figcaption className="text-xs text-muted-foreground">{title}</figcaption>
     </figure>
   );
 };
+
 
 export function ClientDemo() {
   return (
@@ -92,6 +76,7 @@ export function ClientDemo() {
           <ReviewCard key={review.img} {...review} />
         ))}
       </Marquee>
+
       {/* <Marquee reverse pauseOnHover className="[--duration:20s]">
         {secondRow.map((review) => (
           <ReviewCard key={review.username} {...review} />
