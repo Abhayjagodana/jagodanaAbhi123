@@ -60,7 +60,7 @@ const ReviewCard = ({
       className={cn("h-full w-32 cursor-pointer text-center space-y-2")}
     >
       <div className="flex items-center justify-center">
-        <img width={62} height={62} alt={title} src={img} />
+        <img width={62} height={62} alt={title} src={img} title={title}/>
       </div>
       <figcaption className="text-xs text-muted-foreground">{title}</figcaption>
     </figure>
