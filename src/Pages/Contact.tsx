@@ -1,38 +1,46 @@
 import { useForm } from "react-hook-form";
-  import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet";
 import Footer from "./Footer";
 import { NavLink } from "react-router";
-const onSubmit = async (data: any) => {
-  try {
-    const response = await fetch('http://localhost:5000/api/contact', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(data),
-    });
+// import { useEffect } from "react";
+import axios from "axios";
+import { useEffect, useState } from "react";
+import { type } from "os";
 
-    if (response.ok) {
-      alert('Submitted successfully!');
-    } else {
-      alert('Submission failed.');
-    }
-  } catch (error) {
-    console.error('Error:', error);
-    alert('Something went wrong.');
-  }
-};
-
+type FormData={
+  firstName:string,
+  lastName:string,
+  email:string,
+  mobilenumber:string,
+  message:string
+}
 function Contact() {
-  const { register, handleSubmit, watch, formState: { errors } } = useForm();
-   
+  const { register, handleSubmit, watch, formState: { errors }, reset, } = useForm<FormData>();
+   const onSubmit=async(data:FormData)=>{
+    try{
+      const responce=await axios.post("https://jsonplaceholder.typicode.com/posts",{
+           firstname:data.firstName,
+           lastname:data.lastName,
+           emailaddress:data.email,
+           mobilenumber:data.mobilenumber,
+           message:data.message
+      });
+      console.log(responce.data);
+      alert("Message send succesfully");
+      reset();
+      }
+      catch(error){
+         console.log(error);
+         alert("Message Faill");
+      }
+      }
   return (
     <div className="container mx-auto mb-12 mt-[30px] flex max-w-[1200px] flex-col px-4">
       <Helmet>
-                <meta charSet="utf-8" />
-                <title>contact-jagodanaabhi-123</title>
-                
-            </Helmet>
+        <meta charSet="utf-8" />
+        <title>contact-jagodanaabhi-123</title>
+
+      </Helmet>
       <div data-aos="fade-up" className="flex flex-col items-center justify-center aos-init aos-animate">
         <h1 className="mx-auto mb-6 max-w-4xl text-center text-2xl font-bold capitalize leading-tight text-black md:text-[54px]">
           Get in Touch with Us!
@@ -62,12 +70,13 @@ function Contact() {
               Reach out by filling the form.
             </h2>
 
-            <form onSubmit={handleSubmit((data) => console.log(data))}  >
+            <form onSubmit={handleSubmit(onSubmit)} >
               <div className="grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-6">
                 {/* First Name */}
                 <div>
                   <div className="MuiFormControl-root MuiTextField-root w-full border-b border-black bg-white placeholder:text-[16px] placeholder:text-[#0000004D] focus:outline-none css-1pv2xcc">
                     <input
+
                       type="text"
                       placeholder="First Name"
                       {...register("firstName",
@@ -93,6 +102,7 @@ function Contact() {
                 <div>
                   <div className="MuiFormControl-root MuiTextField-root w-full border-b border-black bg-white placeholder:text-[16px] placeholder:text-[#0000004D] focus:outline-none css-1pv2xcc">
                     <input
+
                       type="text"
                       placeholder="Last Name"
                       {...register("lastName", {
@@ -115,6 +125,7 @@ function Contact() {
                 <div>
                   <div className="MuiFormControl-root MuiTextField-root w-full border-b border-black bg-white placeholder:text-[16px] placeholder:text-[#0000004D] focus:outline-none css-1pv2xcc">
                     <input
+
                       type="Email"
                       placeholder="Email-Address"
                       {...register("email", {
@@ -134,6 +145,7 @@ function Contact() {
                 <div>
                   <div className="MuiFormControl-root MuiTextField-root w-full border-b border-black bg-white placeholder:text-[16px] placeholder:text-[#0000004D] focus:outline-none css-1pv2xcc">
                     <input
+
                       type="text"
                       placeholder="Mobile Number"
                       {...register("mobilenumber", {
@@ -151,6 +163,7 @@ function Contact() {
                 <div className="md:col-span-2">
                   <div className="MuiFormControl-root MuiTextField-root mt-5 w-full bg-white placeholder:text-[16px] placeholder:text-[#0000004D] focus:outline-none css-1pv2xcc">
                     <textarea
+
                       placeholder="Write your message here..."
                       {...register("message", {
                         required: { value: true, message: "Please Fill rquire" },
@@ -166,7 +179,7 @@ function Contact() {
 
               {/* Submit Button */}
               <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 shadow h-9 px-4 w-full rounded-10 bg-black bg-gradient-to-l from-black via-white/20 to-black py-6 text-[16px] text-white hover:bg-black"
-              > 
+              >
                 <p className="px-[30px] py-[5px] "  >Submit</p>
               </button>
             </form>
