@@ -7,33 +7,36 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { type } from "os";
 
-type FormData={
-  firstName:string,
-  lastName:string,
-  email:string,
-  mobilenumber:string,
-  message:string
+type FormData = {
+  firstName: string,
+  lastName: string,
+  email: string,
+  mobilenumber: string,
+  message: string
 }
+
 function Contact() {
   const { register, handleSubmit, watch, formState: { errors }, reset, } = useForm<FormData>();
-   const onSubmit=async(data:FormData)=>{
-    try{
-      const responce=await axios.post("https://jsonplaceholder.typicode.com/posts",{
-           firstname:data.firstName,
-           lastname:data.lastName,
-           emailaddress:data.email,
-           mobilenumber:data.mobilenumber,
-           message:data.message
-      });
+  const onSubmit = async (data: FormData) => {
+    try {
+      const responce = await axios.post(`https://jsonplaceholder.typicode.com/${import.meta.env.VITE_API_URL}`, {
+        firstName: data.firstName,
+        lastName: data.lastName,
+        email: data.email,
+        mobilenumber: data.mobilenumber,
+        message: data.message
+      })
       console.log(responce.data);
-      alert("Message send succesfully");
+      alert("Message sent successfully!");
       reset();
-      }
-      catch(error){
-         console.log(error);
-         alert("Message Faill");
-      }
-      }
+    }
+
+    catch (error) {
+      console.log(error);
+      alert("Failed to send message");
+
+    }
+  }
   return (
     <div className="container mx-auto mb-12 mt-[30px] flex max-w-[1200px] flex-col px-4">
       <Helmet>
